@@ -1,0 +1,118 @@
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0%;
+  background-color: var(--Pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main {
+  background-color: #fff;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+main > img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.main__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+h1 {
+  margin-bottom: 5px;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.main__description_parag {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--Desaturated-blue);
+}
+.payment {
+  display: flex;
+  background-color: var(--Very-pale-blue);
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.payment__current__p {
+  font-weight: 700;
+  margin: 4px;
+  font-size: 0.85rem;
+}
+.payment__current__price {
+  font-weight: 500;
+  margin: 4px;
+  color: var(--Desaturated-blue);
+  font-size: 0.85rem;
+}
+.payment__current {
+  text-align: center;
+  padding: 10px;
+}
+a {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.btns {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.btns > button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+.btns__pay {
+  color: #fff;
+  background-color: var(--Bright-blue);
+  font-weight: 700;
+  box-shadow: 0px 10px 20px var(--Desaturated-blue);
+  cursor: pointer;
+}
+
+.btns__pay:hover {
+  background-color: hsl(245, 74%, 65%);
+}
+.btns__cancel {
+  color: var(--Desaturated-blue);
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: 700;
+  cursor: pointer;
+}
+a:hover {
+  color: hsl(245, 74%, 65%);
+  text-decoration: none;
+}
+.btns__cancel:hover {
+  color: black;
+}
